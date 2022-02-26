@@ -30,7 +30,7 @@ RUN go build -a \
 # ===== clickhouse exporter =====
 # ============================
 
-FROM alpine:3.10 AS clickhouse-exporter
+FROM alpine:3.14.3 AS clickhouse-exporter
 EXPOSE 8888
 
 RUN apk add --no-cache ca-certificates
